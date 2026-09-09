@@ -32,7 +32,7 @@
      A                                      TEXT('SFLレコード')
      A            Y1HINB         5   B  8  5TEXT('品目番号')
      A  62                                  DSPATR(RI PC)
-     A            Y1NAKN        20      8 12TEXT('品目名カナ')
+     A            Y1NAKJ        20      8 12TEXT('品目名漢字')
      A            Y1UTAN         5  0   8 35TEXT('定価')
      A                                      EDTCDE(1)
      A            Y1SURY         3  0B  8 45TEXT('数量')
@@ -57,7 +57,7 @@
      A                                      SFLSIZ(15) SFLPAG(5)
      A            H1RCDN         4S 0H      SFLRCDNBR
      A                                  7  4'品番'
-     A                                  7 11'品名カナ'
+     A                                  7 11'品名漢字'
      A                                  7 34'定価'
      A                                  7 44'数量'
      A                                  7 57'金　額'
