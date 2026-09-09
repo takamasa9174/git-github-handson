@@ -135,7 +135,7 @@
      C**品番チェック
      C     Y1HINB        CHAIN     TEITMP
      C                   IF        %FOUND(TEITMP)
-     C                   EVAL      Y1NAKN = ITITKN                              *品名
+     C                   EVAL      Y1NAKJ = ITITKJ                              *品名
      C                   EVAL      Y1UTAN = ITPRIC                              *定価
      C                   ELSE
      C                   EVAL      *IN62  = *ON
@@ -178,7 +178,7 @@
      C                   EVAL      Y1HINB = JUHINB                              *品番
      C     Y1HINB        CHAIN     TEITMP
      C                   IF        %FOUND(TEITMP)
-     C                   EVAL      Y1NAKN = ITITKN                              *品名
+     C                   EVAL      Y1NAKJ = ITITKJ                              *品名
      C                   ENDIF
      C                   EVAL      Y1SURY = JUSURY                              *数量
      C                   EVAL      Y1UTAN = JUUTAN                              *定価
