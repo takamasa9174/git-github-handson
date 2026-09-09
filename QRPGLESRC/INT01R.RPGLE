@@ -16,6 +16,7 @@
      C                   MOVEL     CSADR1        X1ADR1
      C                   MOVEL     CSADR2        X1ADR2
      C                   MOVEL     CSTELE        X1TELE
+     C                   MOVEL     CSTIKU        X1TIKU
      C                   WRITE     FMT90
      C                   WRITE     FMT01
      C                   EXFMT     FMT02
