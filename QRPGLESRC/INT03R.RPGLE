@@ -1,22 +1,27 @@
-     H DATEDIT(*YMD)
-     FTECSMP    IF   E           K DISK
-     FINT03RD   CF   E             WORKSTN
-     C                   DO        *HIVAL
-     C                   WRITE     FMT90
-     C                   EXFMT     FMT01
-     C     *IN03         IFEQ      *ON
-     C                   SETON                                        LR
-     C                   RETURN
-     C                   ENDIF
-     C*
-     C     X1BANG        CHAIN     TECSMP                             60
-     C     *IN60         IFEQ      *OFF
-     C                   WRITE     FMT90
-     C                   WRITE     FMT01
-     C                   EXFMT     FMT02
-     C     *IN03         IFEQ      *ON
-     C                   SETON                                        LR
-     C                   RETURN
-     C                   ENDIF
-     C                   ENDIF
-     C                   ENDDO
+**free
+
+ctl-opt   datedit(*ymd);
+ctl-opt   text('得意先マスター照会');
+
+dcl-f   TECSMP disk(*ext) usage(*input) keyed;
+dcl-f   INT03RD workstn(*ext);
+
+dou  *in03 = *on;
+
+     write     fmt90;
+     exfmt     fmt01;
+
+     if   *in03;
+          leave;
+     endif;     
+
+     chain x1bang tecsmp;
+     if %found(tecsmp);
+          write     fmt90;
+          write     fmt01;
+          exfmt     fmt02;
+     endif;
+
+enddo;
+
+*inlr = *on;
