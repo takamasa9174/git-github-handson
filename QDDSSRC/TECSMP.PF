@@ -1,0 +1,18 @@
+     A*****************************************************************
+     A*     FILE    TITLE -得意先マスターファイル
+     A*             ID    - TECSMP
+     A*****************************************************************
+     A                                      UNIQUE
+     A          R TECSMPR                   TEXT('得意先マスター・レコード')
+     A            CSCSCD         5          COLHDG('得意先' '番号')
+     A            CSCSKN        20          COLHDG('得意先' '仮名')
+     A            CSCSKJ        20O         COLHDG('得意先' '漢字')
+     A            CSADR1        20O         COLHDG('住所１')
+     A            CSADR2        20O         COLHDG('住所２')
+     A            CSTIKU         2          COLHDG('地区' 'コード')
+     A            CSPOST         7          COLHDG('郵便番号')
+     A            CSTELE        13          COLHDG('電話番号')
+     A            CSGEND         9  0       COLHDG('信用限度額')
+     A            CSSIME         1          COLHDG('締め日' 'コード')
+     A*
+     A          K CSCSCD

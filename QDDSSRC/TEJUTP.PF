@@ -1,0 +1,13 @@
+     A*****************************************************************
+     A*     FILE    TITLE -受注ファイル
+     A*             ID    - TEJUTP
+     A*****************************************************************
+     A                                      UNIQUE
+     A          R TEJUTPR                   TEXT('受注明細レコード')
+     A            JUCHUB         5  0       COLHDG('受注番号')
+     A            JUGYOB         3  0       COLHDG('行番号')
+     A            JUHINB         5          COLHDG('品目' '番号')
+     A            JUUTAN         5  0       COLHDG('定価')
+     A            JUSURY         3  0       COLHDG('受注数量')
+     A          K JUCHUB
+     A          K JUGYOB

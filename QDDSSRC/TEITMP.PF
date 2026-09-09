@@ -1,0 +1,13 @@
+     A*****************************************************************
+     A*     FILE    TITLE -品目マスターファイル
+     A*             ID    - TEITMP
+     A*****************************************************************
+     A                                      UNIQUE
+     A          R TEITMPR                   TEXT('品目マスターレコード')
+     A            ITITCD         5          COLHDG('品目' '番号')
+     A            ITITKN        20          COLHDG('品名－カナ')
+     A            ITITKJ        20O         COLHDG('品名－漢字')
+     A            ITITKU         1          COLHDG('商品' '区分')
+     A            ITPRIC         5  0       COLHDG('売単価')
+     A*
+     A          K ITITCD

@@ -1,0 +1,41 @@
+# OS生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# エディタ・IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code for i / Code for IBM i 関連
+.ibmi.json
+.vscode/settings.json
+
+# ログ・一時ファイル
+*.log
+*.tmp
+*.bak
+*.orig
+
+# コンパイル生成物・オブジェクト（IBM i側で生成されるため通常はGit管理不要）
+*.OBJ
+*.MODULE
+*.PGM
+*.SRVPGM
+
+# アーカイブ
+*.zip
+*.tar
+*.gz
+
+# 個人設定・環境依存ファイル
+.env
+.env.local
