@@ -11,7 +11,7 @@
      A          R FMT01                     TEXT('指示レコード')
      A                                      OVERLAY
      A                                  1  3'TRY01R'
-     A                                  1 31'**得意先照会**'
+     A                                  1 31'**得意先照会画面**'
      A                                      DSPATR(RI HI)
      A                                  1 65'日付'
      A                                  1 72DATE EDTCDE(Y)
